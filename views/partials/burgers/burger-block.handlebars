@@ -1,0 +1,16 @@
+<li>
+	<div class="container">
+  		<div class="row">
+    		<div class="col burgerText">	
+    			{{name}}
+			</div>
+    		<div class="col">	
+    			{{#if devour}}		
+					<button class="change-devour" data-id="{{id}}" data-newdevour="{{devour}}">
+						Devour it!
+					</button>
+				{{/if}}
+			</div>
+		</div>
+	</div>
+</li>

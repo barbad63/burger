@@ -1,0 +1,17 @@
+li {
+  padding: 5px;
+  margin: 5px;
+}
+body{
+	background-color: #66ffff;
+}
+.form-group {
+  margin-bottom: 5px;
+}
+input{
+	height: 50px;
+	width: 300px;
+}
+.burgerText {
+  background: #faebd7;
+}

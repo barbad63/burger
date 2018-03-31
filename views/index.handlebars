@@ -1,0 +1,53 @@
+<div class="container">
+    <div class="jumbotron">
+        <div class="text-center">
+          <img src="/assets/img/hamburger-icon.png" class="rounded" alt="..." height="100" width="100">
+        </div>
+
+      <h2 class="text-center"><strong>eAT a BURGER</strong></h2>
+
+    </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <ol>
+        {{#each burgers}}
+          {{#unless devoured}}
+            {{> burgers/burger-block devour=true}}
+          {{/unless}}
+        {{/each}}
+      </ol>
+    </div>
+    <div class="col">
+      <ol>
+        {{#each burgers}}
+          {{#if devoured}}
+            {{> burgers/burger-block devour=false}}
+          {{/if}}
+        {{/each}}
+      </ol>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">       
+    <div class="col">
+
+      <div class="text-center">
+        <form class="create-form">
+          <div class="form-group">
+            <label for="ca"></label>
+            <input type="text" id="ca" name="name">
+          </div>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+      <div class="text-center">
+        <h7>Enter a burger you want to eat...click the submit button</h7>
+      </div>
+    </div>
+  </div>
+</div>
